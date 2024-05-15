@@ -18,7 +18,7 @@ class HomePage(LoginRequiredMixin, ListView):
     model = Order
     template_name = 'TestTask/index.html'
     context_object_name = 'query'
-    paginate_by = 15
+    paginate_by = 9
 
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super().get_context_data(**kwargs)

@@ -13,3 +13,6 @@ class Order(models.Model):
         null=True, blank=True,
         verbose_name='Исполнитель', related_name='executor'
     )
+
+    def __str__(self):
+        return self.name
